@@ -47,7 +47,7 @@ function cicloImmagini () {
 
 }
 
-let box = document.querySelector(".items").classList.add("active")
+let box = document.querySelector(".items").classList.add("active");
 
 let btnUp = document.querySelector(".button-up");
 
@@ -56,17 +56,37 @@ let active = 0
 btnUp.addEventListener("click" , function(){
 
     if (active === images.length - 1){
-        active = 0
-    } else {
-        active ++
-    }
 
-    document.querySelector(".items.active").classList.remove("active")
-    document.getElementsByClassName("items")[active].classList.add("active")
+        active = 0;
+
+    } else {
+
+        active ++;
+
+    };
+
+    document.querySelector(".items.active").classList.remove("active");
+    document.getElementsByClassName("items")[active].classList.add("active");
 });
 
+let btnDown = document.querySelector('.button-down')
 
+btnDown.addEventListener("click" , function(){
 
+    if (active > 0){  
+
+        active--;
+
+    } else {
+
+        active = images.length - 1;
+
+    };
+
+    document.querySelector(".items.active").classList.remove("active");
+    document.getElementsByClassName("items")[active].classList.add("active");
+   
+});
 
 
 
