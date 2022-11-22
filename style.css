@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+}
+
+.items {
+    width: 650px;
+    height: 400px;
+    background-color: red;
+    display: none;
+    position: relative;
+}
+
+.items img {
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    display: block;
+}
+
+hidden {
+    display: none;
+}
+
+.button-up {
+    background-color: rgb(211, 211, 211);
+    color: black;
+    border-radius: 50%;
+}
+
+
+.button-down {
+    background-color: rgb(211, 211, 211);
+    color: black;
+    border-radius: 50%;
+}
+
+.title {
+    position: absolute;
+    bottom: 65px;
+    left: 24px;
+    color: white;
+    font-size: 32px;
+}
+
+.txt {
+    position: absolute;
+    left: 26px;
+    bottom: 5px;
+    color: white;
+}
